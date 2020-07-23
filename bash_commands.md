@@ -38,6 +38,8 @@ $ ctrl + z
 ```
 
 ##### 2. more / less
+> display contents of a file, one page at a time
+
 ```bash
 1. display text after the specified line number
 $ more / less +n file   # n means line number
@@ -50,6 +52,8 @@ $ more / less -s file
 ```
 
 ##### 3. head / tail
+> dislpay the beginning or ending of a file
+
 ``` bash
 1. display first / last lines of a file
 $ head -n <count>   # count means number
