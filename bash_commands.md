@@ -206,3 +206,16 @@ $ cd -
 $ pwd
 ```
 
+##### 4. mkdir
+> make dirctories
+
+``` bash
+1. create intermediate directories as required
+# if -p is not specified, folder must exist
+$ mkdir -p folder1/folder2/...
+
+2. create dirctory with the specified mode 
+$ mkdir -m 777  # 777 means 'rwxrwxrwx'
+```
+
+
