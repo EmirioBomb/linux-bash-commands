@@ -36,6 +36,19 @@ $ cat -sn file
 $ cat < file
 $ ctrl + z
 ```
+
+##### 2. more / less
+```bash
+1. display text after the specified line number
+$ more / less +n file   # n means line number
+
+2. show with line number
+$ more / less -N file
+
+3. squeeze multiple adjacent empty lines
+$ more / less -s file
+```
+
 ---
 #### Directories
 
