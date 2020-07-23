@@ -70,3 +70,26 @@ $ ls -lTt
 $ ls -lh
 ```
 
+3. cd
+> change directory
+
+``` bash
+1. change to basic directory
+-> change to user home directory
+$ cd
+$ cd ~
+
+-> change directory by absolute or relative path
+$ cd .
+$ cd ..
+
+2. navigate to the previous directory
+** (-) will print working directory with relative path **
+$ cd -
+
+-> example: 
+$ cd ../user/lib/xxx
+$ cd ~
+$ cd -
+```
+
