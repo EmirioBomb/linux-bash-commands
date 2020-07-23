@@ -32,6 +32,9 @@ $ cat -sb file
 or 
 $ cat -sn file
 
+6. create a new file with (<)
+$ cat < file
+$ ctrl + z
 ```
 
 ##### 2. ls
