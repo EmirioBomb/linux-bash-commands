@@ -113,6 +113,28 @@ $ du -ah --exclude=".txt" <folder_name>
 $ du -d <number>    # if number is big enough, then it's euqal to du -h
 ```
 
+##### 5. diff
+> compare files line by line
+
+``` bash
+1. output in two columns
+$ diff -y file1 file2
+
+2. ignore case differences in file contents
+$ diff -i / --ignore-case file1 file2
+
+3. ignore case whent comparing file names
+$ diff --ignore-file-name-case file1 file2
+
+4. output only whether files differ
+$ diff -q file1 file2
+
+5. [OPTIONS]
+-E: ignore changes due to tab expansion
+-b: ignore changes in the amount of white space
+-w: ignore all white space
+-B; ignore changes whose lines are all blank
+```
 
 ---
 #### Directories
