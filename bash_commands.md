@@ -1,6 +1,6 @@
 ## Linux Bash Commands
 
-#### Basic
+#### File Examination
 
 ##### 1. cat
 > concatenate and print files
@@ -36,8 +36,10 @@ $ cat -sn file
 $ cat < file
 $ ctrl + z
 ```
+---
+#### Directories
 
-##### 2. ls
+##### 1. ls
 > list directory contents
 
 ``` bash
@@ -73,7 +75,7 @@ $ ls -lTt
 $ ls -lh
 ```
 
-3. cd
+##### 2. cd
 > change directory
 
 ``` bash
