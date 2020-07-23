@@ -113,7 +113,7 @@ $ du -ah --exclude=".txt" <dir_name>
 $ du -d <number>    # if number is big enough, then it's euqal to du -h
 ```
 
-##### 5. diff
+##### 6. diff
 > compare files line by line
 
 ``` bash
@@ -218,7 +218,7 @@ $ mkdir -p dir1/dir2/...
 $ mkdir -m 777  # 777 means 'rwxrwxrwx'
 ```
 
-##### 5. remdir
+##### 5. rmdir
 > remove directories
 
 ``` bash
