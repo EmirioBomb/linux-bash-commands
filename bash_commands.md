@@ -198,3 +198,11 @@ $ cd ~
 $ cd -
 ```
 
+##### 3. pwd
+> print working directory name
+
+``` bash
+1. print logical current working directory name
+$ pwd
+```
+
