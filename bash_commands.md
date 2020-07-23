@@ -49,6 +49,24 @@ $ more / less -N file
 $ more / less -s file
 ```
 
+##### 3. head / tail
+``` bash
+1. display first / last lines of a file
+$ head -n <count>   # count means number
+$ tail -n <count>   # count means number
+
+2. display number bytes of a file
+$ head -c <number>
+$ tail -c <number>
+
+3. tail vs head
+# '+<count> means starts the display at the <count> byte of the input'
+$ tail -c +<count>
+
+# '+<count> means starts the display at the <count> line of the input'
+$ tail -n +<count>
+```
+
 ---
 #### Directories
 
