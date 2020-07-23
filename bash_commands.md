@@ -71,6 +71,24 @@ $ tail -c +<count>
 $ tail -n +<count>
 ```
 
+##### 4. wc
+> word, byte, line, character count
+
+``` bash
+1. count the number of words, not character
+$ wc -w file1 file2  ...
+
+2. count the number of bytes
+$ wc -c file1 file2 ...
+
+3. count the number of lines
+$ wc -l file1 file2 ...
+
+4. combine all
+# default order: 
+$ wc -mclw file1 file2 ...
+```
+
 ---
 #### Directories
 
