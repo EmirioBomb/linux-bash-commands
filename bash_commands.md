@@ -89,6 +89,31 @@ $ wc -l file1 file2 ...
 $ wc -mclw file1 file2 ...
 ```
 
+##### 5. du
+> display disk usage statistics
+
+``` bash
+1. human-readable ouput, use unit sufiixes: Byte, Kilobyte, MegaByte, Gigabyte, Terabyte, Petabyte
+$ du -h file1 file2 ...
+
+2. display an entry for each specified file
+$ du -s <folder_name>
+equivalent to -d 0
+$ du -d 0 <folder_name>
+
+3. display the disk usage of all files
+$ du -sh <folder_name>
+equivalent to 
+$ du -d 0 -h <folder_name>
+
+4. calculate and display disk usages, but excludes the files that matches given pattern
+$ du -ah --exclude=".txt" <folder_name>
+
+5. display an entry for all files and directories depth dirctories deep
+$ du -d <number>    # if number is big enough, then it's euqal to du -h
+```
+
+
 ---
 #### Directories
 
