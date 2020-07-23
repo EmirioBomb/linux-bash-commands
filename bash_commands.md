@@ -97,17 +97,17 @@ $ wc -mclw file1 file2 ...
 $ du -h file1 file2 ...
 
 2. display an entry for each specified file
-$ du -s <folder_name>
+$ du -s <dir_name>
 equivalent to -d 0
-$ du -d 0 <folder_name>
+$ du -d 0 <dir_name>
 
 3. display the disk usage of all files
-$ du -sh <folder_name>
+$ du -sh <dir_name>
 equivalent to 
-$ du -d 0 -h <folder_name>
+$ du -d 0 -h <dir_name>
 
 4. calculate and display disk usages, but excludes the files that matches given pattern
-$ du -ah --exclude=".txt" <folder_name>
+$ du -ah --exclude=".txt" <dir_name>
 
 5. display an entry for all files and directories depth dirctories deep
 $ du -d <number>    # if number is big enough, then it's euqal to du -h
@@ -140,20 +140,20 @@ $ diff -q file1 file2
 #### Directories
 
 ##### 1. ls
-> list directory contents
+> list dir contents
 
 ``` bash
 1. list in long format, the most common used combined by other arguments
 $ ls -l
 
--> list entries with a slash ('/') after file name if that file is a directory
+-> list entries with a slash ('/') after file name if that file is a dir
 $ ls -p
 $ ls -lp
 
 -> recursively list subdirectories  
 $ ls -R
 
-2. list include directory entries whose names begin with a dot (.)
+2. list include dir entries whose names begin with a dot (.)
 $ ls -a
 
 3. list all entries except for (.) and (..)
@@ -176,20 +176,20 @@ $ ls -lh
 ```
 
 ##### 2. cd
-> change directory
+> change dir
 
 ``` bash
-1. change to basic directory
--> change to user home directory
+1. change to basic dir
+-> change to user home dir
 $ cd
 $ cd ~
 
--> change directory by absolute or relative path
+-> change dir by absolute or relative path
 $ cd .
 $ cd ..
 
-2. navigate to the previous directory
-** (-) will print working directory with relative path **
+2. navigate to the previous dir
+** (-) will print working dir with relative path **
 $ cd -
 
 -> example: 
@@ -199,10 +199,10 @@ $ cd -
 ```
 
 ##### 3. pwd
-> print working directory name
+> print working dir name
 
 ``` bash
-1. print logical current working directory name
+1. print logical current working dir name
 $ pwd
 ```
 
@@ -211,11 +211,23 @@ $ pwd
 
 ``` bash
 1. create intermediate directories as required
-# if -p is not specified, folder must exist
-$ mkdir -p folder1/folder2/...
+# if -p is not specified, directory must exist
+$ mkdir -p dir1/dir2/...
 
 2. create dirctory with the specified mode 
 $ mkdir -m 777  # 777 means 'rwxrwxrwx'
 ```
 
+##### 5. remdir
+> remove directories
+
+``` bash
+1. remove empty directory
+# directory must be empty
+$ rmdir dir
+
+2. remove empty direcotries recursively
+# directory must be empty
+$ rmdir dir1/dir2/dir...
+```
 
