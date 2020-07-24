@@ -358,5 +358,13 @@ $ chmod =rw,+X file
 
 ``` bash
 1. recursive change user id or group id for the hierachies rooted in the files
-$ chown -R <userid/groupid> file/directory
+$ chown -R <userid> file/directory
+```
+
+##### 3. chgrp
+> change group
+
+``` bash
+1. recursive change group for the hierachies rooted in the files
+$ chgrp -R <group-id> file/directory
 ```
