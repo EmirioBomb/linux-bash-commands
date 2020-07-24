@@ -231,3 +231,30 @@ $ rmdir dir
 $ rmdir dir1/dir2/dir...
 ```
 
+---
+#### File Operations
+
+##### 1. cp
+> copy files
+
+``` bash
+1. preserves structure and attributes of files but not directory structure
+$ cp -a source_file target_file
+or 
+$ cp -pPR source_file target_file
+
+2. do not overwrite an existing file (-n option overrides any previous  -f -r)
+$ cp -n source_file target_file
+
+3. prompt to the standard error output before copying a file
+$ cp -i source_file target_file
+
+4. if the destination file cannot be opened, remove it and create a new file
+$ cp -f source_file target_file
+
+5. recursive copy files, include hidden files
+$ cp -R source_file target_file
+
+6. copy multi files to directory which cannot be empty
+$ cp file1 file2 ... directory
+```
