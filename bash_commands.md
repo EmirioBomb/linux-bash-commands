@@ -451,3 +451,11 @@ $ uname -n
 7. [-a] behave as though all of the options -mnrsv were specified
 $ uname -a
 ```
+
+##### 4. time
+> time command execution
+
+``` bash
+1. measure the time taken to download files using the wget tool
+$ time wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.9.tar.xz
+```
