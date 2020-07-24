@@ -258,3 +258,23 @@ $ cp -R source_file target_file
 6. copy multi files to directory which cannot be empty
 $ cp file1 file2 ... directory
 ```
+
+##### 2. mv
+> move or rename files or directory
+
+``` bash
+1. do not prompt for comfirmation before overwriting the destination path
+$ mv -f source target
+
+2. prompt to the standart ouput before moving a file or directory
+$ mv -i source target
+
+3. do not overwrite an existing file or directory
+$ mv -n source target
+
+4. move multi files to a directory that cannot be empty
+$ mv [-fin] file1 file2 ... dir
+
+5. rename file or directory name
+$ mv [-fin] source_file target_file
+```
