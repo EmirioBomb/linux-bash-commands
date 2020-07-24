@@ -380,3 +380,25 @@ $ umask -S
 # Note that when the mode is interpreted as an octal number, each number of the umask is subtracted from 7. Thus, a umask of 022 results in permissions of 755.
 $ umask 022
 ```
+
+---
+#### System Informations
+
+##### 1. date
+> display or set date and time
+
+``` bash
+1. display default date
+$ date  # default is CST format
+
+2. display date with UTC format
+$ date -u
+
+3. display filename date
+$ date -r filename 
+or 
+$ date -ur filename     # option must be [-ur], [-ru] is incorrect
+
+4. display time format
+$ date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S" 
+```
