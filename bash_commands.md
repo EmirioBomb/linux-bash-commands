@@ -368,3 +368,15 @@ $ chown -R <userid> file/directory
 1. recursive change group for the hierachies rooted in the files
 $ chgrp -R <group-id> file/directory
 ```
+
+##### 4. umask
+> change the default permissions given to newly created directories or files
+
+``` bash
+1. check current default permissions
+$ umask -S
+
+2. set default permission
+# Note that when the mode is interpreted as an octal number, each number of the umask is subtracted from 7. Thus, a umask of 022 results in permissions of 755.
+$ umask 022
+```
