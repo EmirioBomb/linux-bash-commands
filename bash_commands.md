@@ -352,3 +352,11 @@ $ ls -le file
 4. set read and write permissions to the usual defaults, but retain any execute permissions that are currently set
 $ chmod =rw,+X file
 ```
+
+##### 2. chown
+> change files owner and group
+
+``` bash
+1. recursive change user id or group id for the hierachies rooted in the files
+$ chown -R <userid/groupid> file/directory
+```
