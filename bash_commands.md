@@ -402,3 +402,26 @@ $ date -ur filename     # option must be [-ur], [-ru] is incorrect
 4. display time format
 $ date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S" 
 ```
+
+##### 2. cal
+> display a calendar
+
+``` bash
+1. display calendar
+$ cal
+
+2. turns off highlighting of today
+$ cal -h
+
+3. display the previous, current and next month surrounding today
+$ cal -3
+
+4. display the number of the month after the current month
+$ cal -A <number>   # number = 1......N
+
+5. display the number of the month before the current month
+$ cal -B <number>   # number = 1......N
+
+6. display a calendar of the specified year
+$ cal -y <year>
+```
