@@ -425,3 +425,29 @@ $ cal -B <number>   # number = 1......N
 6. display a calendar of the specified year
 $ cal -y <year>
 ```
+
+##### 3. uname
+> print operting system name
+
+``` bash
+1. print operating system version
+$ uname -v
+
+2. print machine processor architecture name
+$ uname -p
+
+3. print machine hardware name
+$ uname -m
+
+4. print operating system release
+$ uname -r
+
+5. print operating system name
+$ uname -s
+
+6. print the nodename for communication network 
+$ uname -n
+
+7. [-a] behave as though all of the options -mnrsv were specified
+$ uname -a
+```
