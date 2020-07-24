@@ -316,3 +316,39 @@ $ touch -c file     # file has already exist
 2. creat a new file if it does not exist
 $ touch file
 ```
+
+---
+#### File Permissions
+
+##### 1. chmod
+> chang file modes or access control lists
+
+``` bash
+# read      -> open for reading
+# write     -> open for writing
+# append    -> open for writing, but in a fashion that only allows writes into areas of the file not previously writtern
+# rwx+      -> + means append
+# execute   -> execute file as a script or program
+
+# user    group   other
+# rwx      rwx     rwx
+
+1. set permission with number
+$ chmod 644 file
+
+-> examples
+$ chmod 1 file      # --------x file
+$ chmod 11 file     # -----x--x file
+$ chmod 400 file    # r-------- file
+
+2. set permissiion with u(user) g(group) o(other)
+$ chmod u+r g-x o+w file    # user add read, group remove execute, others add write mode
+$ chmod ugo-r   # remove read permission for user/group/others
+
+3. add append info and check append info
+$ chmod +a 'guest deny read' file
+$ ls -le file
+
+4. set read and write permissions to the usual defaults, but retain any execute permissions that are currently set
+$ chmod =rw,+X file
+```
