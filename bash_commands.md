@@ -305,3 +305,14 @@ $ rm -ri[-Ri] dir1/dir2/file1 file2
 3. remove file start with (-) which created by (mkdir -p -filename)
 $ rm -- -filename   # -- option will stop processing flag options at this point
 ```
+
+##### 4. touch
+> change file access and modification times
+
+``` bash
+1. do not create file if it exists with no error messages 
+$ touch -c file     # file has already exist
+
+2. creat a new file if it does not exist
+$ touch file
+```
