@@ -459,3 +459,14 @@ $ uname -a
 1. measure the time taken to download files using the wget tool
 $ time wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.9.tar.xz
 ```
+
+---
+#### Users and Groups
+
+##### 1. whoami
+> display effective user id
+
+``` bash 
+1. display effective user id
+$ whoami
+```
