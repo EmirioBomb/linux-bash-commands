@@ -229,6 +229,9 @@ $ rmdir dir
 2. remove empty direcotries recursively
 # directory must be empty
 $ rmdir dir1/dir2/dir...
+
+3. remove (-filename) which created by (mkdir -p -filename)
+$ rmdir -- -filename    # -- will stop processing option flag at this point
 ```
 
 ---
@@ -277,4 +280,28 @@ $ mv [-fin] file1 file2 ... dir
 
 5. rename file or directory name
 $ mv [-fin] source_file target_file
+```
+
+##### 3. rm
+> remove files or directories
+
+``` bash
+1. attempt to remove directories as well as other types of files
+$ rm -d file1 file2 ...
+or
+# if directory is not empty, failed to remove directory
+$ rm -d dir1 dir2 ...
+
+2. recursive remove files or directories (-r is equal to -R)
+$ rm -r[-R] dir1/dir2/file
+
+-> extend
+# remove files without prompt
+$ rm -rf[-Rf] dir1/dir2/file1 file2
+
+# remove files with interactive prompt
+$ rm -ri[-Ri] dir1/dir2/file1 file2
+
+3. remove file start with (-) which created by (mkdir -p -filename)
+$ rm -- -filename   # -- option will stop processing flag options at this point
 ```
