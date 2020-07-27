@@ -499,3 +499,18 @@ $ su -l user
 same as 
 $ su - user
 ```
+
+##### 5. sudo
+> execute a command as another user
+
+``` bash
+1. substitute root
+$ sudo su   # compatible with MACOS
+
+2. edit file as user root
+$ sudo -u root vim filename
+
+3. to get a file listing of an unreadable directory
+$ sudo ls -l /usr/local/protected
+```
+
