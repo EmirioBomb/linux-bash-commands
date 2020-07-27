@@ -712,3 +712,24 @@ $ top -stats pid,uid,cpu,mem,time
 # ps -ef | grep process_name
 $ top -pid porcess_id
 ```
+
+##### 5. kill
+> terminate a signal or process
+
+``` bash
+# commonly used singals
+# 1. HUP    -> hang up
+# 2. INT    -> interrupt
+# 3. QUIT   -> quit
+# 6. ABRT   -> abort
+# 9. KILL   -> non-catchable, non-ignorable kill
+# 14 ALRM   -> alarm clock
+# 15 TERM   -> software termination signal
+1. terminate processes with PIDs 142 and 157
+$ kill 142 157
+
+2. send the signal to the process with pid 157
+$ kill -s HUP 157
+or 
+$ kill 1 157
+```
