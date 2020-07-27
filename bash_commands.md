@@ -479,3 +479,10 @@ $ whoami
 $ passwd <username>
 ```
 
+##### 3. groups
+> show group memberships
+
+``` bash
+1. show groups memberships
+$ groups <username>
+```
