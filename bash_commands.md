@@ -546,6 +546,11 @@ $ grep -R / -r directory
 
 8. specify a pattern
 $ grep -e "[1-9]+"
+
+9. begin with 'd', end with 'x'
+$ grep '^d' filename
+or
+$ grep 'x$' filename
 ```
 
 ##### 2. find
@@ -634,4 +639,57 @@ $ ps -ef | grep iterm
 
 3. show all processes with BSD format
 $ ps -axu username  # -u must added to tail
+```
+
+##### 2. jobs
+> display status of jobs in the current session
+
+``` bash
+# ctrl(^) + z suspends current running process
+1. show suspended jobs
+$ jobs -l
+or
+$ jobs -p   # show pid
+or 
+$ jobs  # with no option means displaying jobs with no pid
+
+2. show running jobs only
+$ jobs -r
+
+3. show sotpped jobs only
+$ jobs -s
+```
+
+##### 3. bg / & / fg
+> list the jobs running in the background
+
+``` bash
+1. running the current jobs in the background with specified jobs_id
+$ bg %N     # N means jobs identifier
+
+-> running the current jobs in the background with specified jobs_name
+# bg %?String
+# example: [1]- stopped nautilus
+#          [2]+ sotpped beautilus
+# + - means last or 
+$ bg %?ti   # it will run beautilus in the background
+
+2. running the current jobs in the foreground
+$ fg %N     # N means jobs identifier
+
+-> running the current jobs in the foreground with specified jobs_name
+# as same as above
+$ fg %?ti   # it will run beautilus in the foreground
+
+3. running the current jobs in the background
+# close current session, if you want to kill or stop job with &
+$ ping baidu.com &  # running in the background
+
+4. running the previous jobs in the back/foreground
+$ bg / fg %%
+or 
+$ bg / fg %+
+
+5. running the last jobs in the back/foreground
+$ bg / fg %-
 ```
