@@ -548,7 +548,40 @@ $ grep -R / -r directory
 $ grep -e "[1-9]+"
 ```
 
-##### 2. sort
+##### 2. find
+> walk a file hirerarchy
+
+``` bash
+1. find "a.txt" files in the specified directories
+$ find ./ -name 'a.txt'
+
+2. same as above, but ignore case sensitive
+$ find ./ -iname 'a.txt'
+
+3. print out a list of all the files whose names do not end in .txt
+$ find . \! -name '*.txt' -print    # print can be ignored
+
+4. find file by the specified type, possible file types are as follows
+# b -> block special
+# c -> character special
+# d -> directory
+# f -> regular file
+# l -> symbolic link
+# p -> FIFO
+# s -> socket
+$ find -type f 'a.txt' 
+
+5. find file whose size is in a specified size, scale indicators are like (c(byte) / k(bytes) / M(Megabyte) / G(Gigabyte) / T(Terabyte) / P(Petabyte))
+$ find . -type f -size 10c  # 10c -> 10bytes
+# +10c -> larger than 10bytes
+# -10c -> smaller than 10bytes
+# 10c -> equal to 10bytes
+
+6. find files with other utilities
+$ find . -type f -size 10c -exec ls -lSh {} \;
+```
+
+##### 3. sort
 > sort or merge records of text and binary files
 
 ``` bash
@@ -569,3 +602,4 @@ $ sort -u file1
 # 1. this is the first line
 # 1. thiis is the xxx
 ```
+
