@@ -589,7 +589,15 @@ $ find . -type f -size 10c -exec ls -lSh {} \;
 $ locate /usr/lib/sh
 ```
 
-##### 4. sort
+##### 4. which
+> locate a program file in the user's path
+
+``` bash
+1. which git
+# /usr/bin/git
+```
+
+##### 5. sort
 > sort or merge records of text and binary files
 
 ``` bash
