@@ -619,3 +619,19 @@ $ sort -u file1
 # 1. thiis is the xxx
 ```
 
+---
+#### Process Management
+
+##### 1. ps
+> process status
+
+``` bash
+1. show all current running process
+$ ps -ax
+
+2. search for a particular process
+$ ps -ef | grep iterm
+
+3. show all processes with BSD format
+$ ps -axu username  # -u must added to tail
+```
