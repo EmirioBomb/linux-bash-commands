@@ -470,3 +470,12 @@ $ time wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.9.tar.xz
 1. display effective user id
 $ whoami
 ```
+
+##### 2. passwd
+> modify a user's password
+
+``` bash
+1. modify user's password
+$ passwd <username>
+```
+
