@@ -547,3 +547,25 @@ $ grep -R / -r directory
 8. specify a pattern
 $ grep -e "[1-9]+"
 ```
+
+##### 2. sort
+> sort or merge records of text and binary files
+
+``` bash
+1. sort lines
+# a.txt -> 2. this is the first line
+# b.txt -> 1. this is the second line
+# c.txt -> 0. this is header line
+$ sort a.txt b.txt
+
+2. print the output to the output file
+$ sort file1 file2 ... fileN -o output_file
+
+3. suppress all lines that have a key that is equal to an already processed one.
+# file1 -> 1. this is the first line
+#       -> 1. thiis is the xxx
+#       -> 1. this is the first line
+$ sort -u file1
+# 1. this is the first line
+# 1. thiis is the xxx
+```
