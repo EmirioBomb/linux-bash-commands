@@ -693,3 +693,22 @@ $ bg / fg %+
 5. running the last jobs in the back/foreground
 $ bg / fg %-
 ```
+
+##### 4. top
+> display and update sorted information about processees
+
+``` bash
+1. only display up to N processes
+$ top -n N  # N means number
+
+2. sort the processes by cpu usage (decending) and display up to 10 processes
+$ top -o cpu -n 10  # order by cpu
+$ top -o mem        # order by memory usage
+
+3. display only the specified statistics, regardless of any growth of the terminal
+$ top -stats pid,uid,cpu,mem,time
+
+4. display with pid
+# ps -ef | grep process_name
+$ top -pid porcess_id
+```
