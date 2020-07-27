@@ -486,3 +486,16 @@ $ passwd <username>
 1. show groups memberships
 $ groups <username>
 ```
+
+##### 4. su
+> substitute user identity
+
+``` bash
+1. sustitute user
+$ su user
+
+2. simulate a full login, su will change dirctory to the target's home directory
+$ su -l user
+same as 
+$ su - user
+```
