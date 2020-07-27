@@ -514,3 +514,36 @@ $ sudo -u root vim filename
 $ sudo ls -l /usr/local/protected
 ```
 
+---
+#### Searching and Sorting
+
+##### 1. grep
+> grep = (global search regular expression) file pattern searcher
+
+``` bash
+1. to find all occurrences of the word 'test' in a file or files
+$ grep 'test' filename
+$ grep 'test' file1 file2 ... fileN
+
+2. to find all occurrences of the pattern '.txt' in a file or files
+$ grep '^\.txt' filename
+$ grep '^\.txt' file1 file2 ... fileN
+
+3. to find all lines in a file which do not contain the words 'foo' and 'bar'
+$ grep -v -e 'foo' -e 'bar' filename
+
+4. display line number counter
+$ grep -n 'xxx' file
+
+5. display couter of selected lines
+$ grep -c 'xxx' file
+
+6. always print filename headers with output lines
+$ grep -H 'xxx' file
+
+7. recursively search subdirectories listed
+$ grep -R / -r directory
+
+8. specify a pattern
+$ grep -e "[1-9]+"
+```
