@@ -581,7 +581,15 @@ $ find . -type f -size 10c  # 10c -> 10bytes
 $ find . -type f -size 10c -exec ls -lSh {} \;
 ```
 
-##### 3. sort
+##### 3. locate
+> find filenames quickly
+
+``` bash
+1. locate files that begin with "sh"
+$ locate /usr/lib/sh
+```
+
+##### 4. sort
 > sort or merge records of text and binary files
 
 ``` bash
