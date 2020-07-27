@@ -733,3 +733,14 @@ $ kill -s HUP 157
 or 
 $ kill 1 157
 ```
+
+##### 6. killall
+> kill processes by name
+
+``` bash
+1. list the names of the available signals and exit
+$ killall -l
+
+2. kill two prcesses or more at once
+$ killall process1 process2 ... process3
+```
